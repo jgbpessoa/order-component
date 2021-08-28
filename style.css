@@ -20,9 +20,9 @@
 body {
   background-image: url(./images/pattern-background-desktop.svg),
     linear-gradient(var(--primary-pale), var(--primary-pale));
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: repeat-x;
   background-attachment: fixed;
+  background-position: top;
   width: 100%;
   height: 100%;
 }
