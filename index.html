@@ -12,16 +12,20 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        margin-top: -20px;
-        font-size: 11px;
+        font-size: 0.75rem;
         text-align: center;
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        margin-bottom: 0.5rem;
+        height: 0.75rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -29,13 +33,10 @@
     </style>
   </head>
   <body>
-    <article class="card">
+    <main class="card">
       <div class="container">
         <div class="card-img-container">
-          <img
-            src="./images/illustration-hero.svg"
-            alt="Drawing of a girl listening to music"
-          />
+          <img src="./images/illustration-hero.svg" alt="" />
         </div>
         <div class="card-info">
           <div class="card-text">
@@ -46,27 +47,29 @@
             </p>
           </div>
           <div class="card-plan">
-            <div class="card-icon-price">
-              <img src="./images/icon-music.svg" alt="Music icon" />
+            <div class="card-plan-icon-price">
+              <div class="card-plan-icon">
+                <img src="./images/icon-music.svg" alt="" aria-hidden="true" />
+              </div>
               <div class="card-plan-price">
-                <span class="plan">Annual Plan</span>
-                <span class="price">$59.99/year</span>
+                <h2 class="plan">Annual Plan</h2>
+                <p class="price">$59.99/year</p>
               </div>
             </div>
-            <div class="change" id="change">
-              <a href="#change">Change</a>
+            <div class="card-plan-change">
+              <a href="#">Change</a>
             </div>
           </div>
           <a href="#" class="payment">Proceed to Payment</a>
           <a href="#cancel" class="cancel" id="cancel">Cancel Order</a>
         </div>
       </div>
-    </article>
-    <div class="attribution">
+    </main>
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">José Pessoa</a>.
-    </div>
+    </footer>
   </body>
 </html>
