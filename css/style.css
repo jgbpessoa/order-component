@@ -18,7 +18,7 @@
 }
 
 body {
-  background-image: url(../images/pattern-background-desktop.svg),
+  background-image: url(../images/pattern-background-mobile.svg),
     linear-gradient(var(--primary-pale), var(--primary-pale));
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -37,8 +37,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .card-info {
   padding: 1.25rem;
@@ -49,11 +49,11 @@ body {
   flex-direction: column;
   align-items: stretch;
   text-align: center;
-  width: 85%;
-  max-width: 25rem;
+  width: 87.5%;
+  max-width: 28rem;
   min-width: 17rem;
   border-radius: 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-container {
@@ -81,7 +81,7 @@ body {
   text-align: center;
   margin: 0 auto;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.75;
   width: 95%;
 }
 
@@ -93,7 +93,7 @@ body {
   padding: 1rem;
   margin-top: 1.5rem;
   background: var(--neutral-very-pale);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .card-plan-icon-price {
@@ -105,14 +105,10 @@ body {
   display: inline-flex;
 }
 
-.card-plan-icon img {
-  width: 40px;
-}
-
 .card-plan-price {
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .plan {
@@ -144,8 +140,8 @@ body {
   background: var(--primary-bright);
   border-radius: 10px;
   font-size: 0.875rem;
-  height: 2.75rem;
-  line-height: 2.75rem;
+  height: 3rem;
+  line-height: 3rem;
   color: var(--neutral-very-pale);
   text-decoration: none;
   font-weight: 700;
@@ -173,6 +169,15 @@ body {
 }
 
 @media screen and (min-width: 23.4em) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg),
+      linear-gradient(var(--primary-pale), var(--primary-pale));
+  }
+
+  .card-plan-price {
+    justify-content: space-evenly;
+  }
+
   .card {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -193,17 +198,34 @@ body {
 
 @media screen and (min-width: 31.25em) {
   .card-info {
-    padding: 2.5rem;
+    padding: 3rem;
   }
 
   .card-plan {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.75rem;
     margin-top: 1.25rem;
+    height: 6rem;
+  }
+
+  .plan {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
   }
 
   .card-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-top: 0;
+  }
+
+  .payment {
+    font-size: 1rem;
+  }
+
+  .card-text p {
+    font-size: 1rem;
   }
 
   .card-plan-icon-price {
@@ -212,5 +234,6 @@ body {
 
   .cancel {
     margin-bottom: 0;
+    margin-top: 2rem;
   }
 }
